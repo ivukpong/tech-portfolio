@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaGithub,
+  FaX,
 } from "react-icons/fa6";
 
 interface SocialLink {
@@ -24,7 +25,7 @@ interface HeaderProps {
 
 const iconMap: Record<string, JSX.Element> = {
   facebook: <FaFacebook className="text-4xl" />,
-  X: <FaXTwitter className="text-4xl" />,
+  X: <FaX className="text-4xl" />,
   linkedin: <FaLinkedin className="text-4xl" />,
   instagram: <FaInstagram className="text-4xl" />,
   github: <FaGithub className="text-4xl" />,
@@ -71,7 +72,7 @@ export default function Header({ data }: HeaderProps) {
             className="text-accent hover:text-text transition-transform transform hover:scale-125 duration-300"
           >
             {iconMap[link.name.toLowerCase()] || (
-              <FaGithub className="text-4xl" />
+              <FaXTwitter className="text-4xl" />
             )}
           </a>
         ))}
