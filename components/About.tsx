@@ -70,18 +70,24 @@ export default function About({ data }: AboutProps) {
               </h3>
               <p className="text-lg text-textMuted">
                 <span className="block font-semibold">{data.name}</span>
-                <a
-                  href="tel:+2349079232170"
-                  className="block flex items-center gap-2"
-                >
-                  <FaPhone className="text-accent" /> {data.phone}
-                </a>
-                <a
-                  href="mailto:ivukpong@gmail.com"
-                  className="block flex items-center gap-2"
-                >
-                  <FaEnvelope className="text-accent" /> {data.email}
-                </a>
+                <p className="text-textMuted flex items-center gap-2">
+                  <FaEnvelope className="text-xl text-accent" />
+                  <a
+                    href={`mailto:${data.email}`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {data.email}
+                  </a>
+                </p>
+                <p className="text-textMuted flex items-center gap-2">
+                  <FaPhone className="text-xl text-accent" />{" "}
+                  <a
+                    href={`tel:+2349079232170`}
+                    className="hover:text-accent transition-colors"
+                  >
+                    {data.phone}
+                  </a>
+                </p>
               </p>
             </div>
           </motion.div>

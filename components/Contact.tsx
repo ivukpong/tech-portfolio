@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaPhone, FaUser, FaPaperPlane } from "react-icons/fa";
 
 interface ContactProps {
@@ -17,42 +16,26 @@ export default function Contact({ data }: ContactProps) {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState("");
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
-    setSuccess(false);
 
-    try {
-      await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
-        {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-        },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
-      );
+    // Encode message to ensure proper formatting in the email body
+    const mailtoLink = `mailto:${
+      data.email
+    }?subject=Contact from ${encodeURIComponent(
+      form.name
+    )}&body=${encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+    )}`;
 
-      setSuccess(true);
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error(err);
-      setError("Failed to send message. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    // Open the user's default mail client
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -109,7 +92,13 @@ export default function Contact({ data }: ContactProps) {
                 </a>
               </p>
               <p className="text-textMuted flex items-center gap-2">
-                <FaPhone className="text-xl text-accent" /> {data.phone}
+                <FaPhone className="text-xl text-accent" />{" "}
+                <a
+                  href={`tel:+2349079232170`}
+                  className="hover:text-accent transition-colors"
+                >
+                  {data.phone}
+                </a>
               </p>
             </motion.div>
 
@@ -178,19 +167,9 @@ export default function Contact({ data }: ContactProps) {
                 whileTap={{ scale: 0.95 }}
                 type="submit"
                 className="w-full p-3 bg-accent text-white rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-accent/80 transition-colors"
-                disabled={loading}
               >
-                <FaPaperPlane /> {loading ? "Sending..." : "Send Message"}
+                <FaPaperPlane /> Send Message
               </motion.button>
-
-              {success && (
-                <p className="text-green-500 text-center mt-3">
-                  Message sent successfully!
-                </p>
-              )}
-              {error && (
-                <p className="text-red-500 text-center mt-3">{error}</p>
-              )}
             </motion.form>
           </motion.div>
         </motion.div>
