@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import ParticlesBg from "particles-bg";
 import { JSX } from "react";

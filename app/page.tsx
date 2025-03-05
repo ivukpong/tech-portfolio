@@ -1,11 +1,16 @@
 "use client";
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Resume from "@/components/Resume";
-import Portfolio from "@/components/Portfolio";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
 import { data } from "@/data";
+
+// Dynamically import all components with `ssr: false`
+const Header = dynamic(() => import("@/components/Header"), { ssr: false });
+const About = dynamic(() => import("@/components/About"), { ssr: false });
+const Resume = dynamic(() => import("@/components/Resume"), { ssr: false });
+const Portfolio = dynamic(() => import("@/components/Portfolio"), {
+  ssr: false,
+});
+const Contact = dynamic(() => import("@/components/Contact"), { ssr: false });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 export default function Home() {
   return (
