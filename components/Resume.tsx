@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { FaGraduationCap, FaBriefcase, FaTools } from "react-icons/fa";
 import { Experience, Education, SkillCategory } from "@/types/resume";

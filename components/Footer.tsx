@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { SocialLink } from "@/types/resume";
 
@@ -13,7 +11,7 @@ export default function Footer({ data }: FooterProps) {
   return (
     <footer className="relative py-12 bg-gradient-to-t from-secondary to-primary border-t border-secondary overflow-hidden">
       {/* Parallax Background */}
-      <div className="absolute inset-0 bg-[url('/path-to-footer-bg.jpg')] bg-cover bg-fixed opacity-10" />
+      <div className="absolute inset-0 bg-cover bg-fixed opacity-10" />
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.div

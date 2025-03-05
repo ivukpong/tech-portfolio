@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaBriefcase } from "react-icons/fa";
 
@@ -24,7 +22,7 @@ export default function About({ data }: AboutProps) {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-20"
+        className="absolute inset-0 opacity-20"
       ></motion.div>
 
       <div className="container mx-auto px-6 max-w-5xl relative z-10">
@@ -70,26 +68,24 @@ export default function About({ data }: AboutProps) {
               <h3 className="text-2xl font-bold text-accent flex items-center gap-2">
                 <FaBriefcase /> Contact Details
               </h3>
-              <p className="text-lg text-textMuted">
-                <span className="block font-semibold">{data.name}</span>
-                <p className="text-textMuted flex items-center gap-2">
-                  <FaEnvelope className="text-xl text-accent" />
-                  <a
-                    href={`mailto:${data.email}`}
-                    className="hover:text-accent transition-colors"
-                  >
-                    {data.email}
-                  </a>
-                </p>
-                <p className="text-textMuted flex items-center gap-2">
-                  <FaPhone className="text-xl text-accent" />{" "}
-                  <a
-                    href={`tel:+2349079232170`}
-                    className="hover:text-accent transition-colors"
-                  >
-                    {data.phone}
-                  </a>
-                </p>
+              <span className="block font-semibold">{data.name}</span>
+              <p className="text-textMuted flex items-center gap-2">
+                <FaEnvelope className="text-xl text-accent" />
+                <a
+                  href={`mailto:${data.email}`}
+                  className="hover:text-accent transition-colors"
+                >
+                  {data.email}
+                </a>
+              </p>
+              <p className="text-textMuted flex items-center gap-2">
+                <FaPhone className="text-xl text-accent" />{" "}
+                <a
+                  href={`tel:+2349079232170`}
+                  className="hover:text-accent transition-colors"
+                >
+                  {data.phone}
+                </a>
               </p>
             </div>
           </motion.div>

@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import { Project } from "@/types/resume";
 import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
@@ -17,7 +15,7 @@ export default function Portfolio({ data }: PortfolioProps) {
       className="py-20 bg-primary relative overflow-hidden"
     >
       {/* Parallax Background */}
-      <div className="absolute inset-0 bg-[url('/matrix.jpg')] bg-cover bg-fixed opacity-10"></div>
+      <div className="absolute inset-0 bg-cover bg-fixed opacity-10"></div>
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.div

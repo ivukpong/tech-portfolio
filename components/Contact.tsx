@@ -1,6 +1,5 @@
-"use client";
-
-import { useState } from "react";
+"use client"; // Ensure this runs only on the client
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhone, FaUser, FaPaperPlane } from "react-icons/fa";
 
@@ -18,6 +17,14 @@ export default function Contact({ data }: ContactProps) {
     message: "",
   });
 
+  const [mailTo, setMailTo] = useState(""); // Prevents hydration issues
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setMailTo(`mailto:${data.email}`);
+    }
+  }, [data.email]);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -27,17 +34,16 @@ export default function Contact({ data }: ContactProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Encode message to ensure proper formatting in the email body
-    const mailtoLink = `mailto:${
-      data.email
-    }?subject=Contact from ${encodeURIComponent(
-      form.name
-    )}&body=${encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
-    )}`;
-
-    // Open the user's default mail client
-    window.location.href = mailtoLink;
+    if (typeof window !== "undefined") {
+      const mailtoLink = `mailto:${
+        data.email
+      }?subject=Contact from ${encodeURIComponent(
+        form.name
+      )}&body=${encodeURIComponent(
+        `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+      )}`;
+      window.location.href = mailtoLink;
+    }
   };
 
   return (
@@ -45,8 +51,8 @@ export default function Contact({ data }: ContactProps) {
       id="contact"
       className="py-20 relative bg-secondary overflow-hidden"
     >
-      {/* Parallax Background */}
-      <div className="absolute inset-0 bg-[url('/matrix.jpg')] bg-cover bg-fixed opacity-10" />
+      {/* Parallax Background Fix */}
+      <div className="absolute inset-0 bg-cover opacity-10" />
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.div
@@ -87,16 +93,16 @@ export default function Contact({ data }: ContactProps) {
               <p className="text-textMuted flex items-center gap-2">
                 <FaEnvelope className="text-xl text-accent" />
                 <a
-                  href={`mailto:${data.email}`}
+                  href={mailTo} // ✅ Now it won’t break hydration
                   className="hover:text-accent transition-colors"
                 >
                   {data.email}
                 </a>
               </p>
               <p className="text-textMuted flex items-center gap-2">
-                <FaPhone className="text-xl text-accent" />{" "}
+                <FaPhone className="text-xl text-accent" />
                 <a
-                  href={`tel:+2349079232170`}
+                  href={`tel:${data.phone}`}
                   className="hover:text-accent transition-colors"
                 >
                   {data.phone}
