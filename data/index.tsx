@@ -54,10 +54,11 @@ export const data = {
     education: [
       {
         school: "Covenant University",
-        degree: "Bachelor of Engineering in Computer Engineering",
+        degree:
+          "Bachelor of Engineering in Computer Engineering (First Class Honours)",
         graduated: "2016 - 2021",
         description:
-          "GPA: 4.63/5. Relevant coursework: Software Development Techniques, Programming in C, MATLAB, Object-Oriented Design and Programming.",
+          "Relevant coursework: Software Development Techniques, Programming in C, MATLAB, Object-Oriented Design and Programming.",
       },
       {
         school: "Primo Academy",
@@ -257,51 +258,49 @@ export const data = {
     projects: [
       {
         title: "Coldtivate",
-        category: "My Travel Blog for my post-university travels",
+        category: "A Virtual Cold Chain Assistant for Farmers",
         image: "portfolio/coldtivate.png",
         url: "app.coldtivate.org",
       },
       {
         title: "Ashipa Electric",
-        category: "Website I built for a restaurant I like in Thailand",
+        category: "Official website for a multinational energy company",
         image: "portfolio/ashipa.png",
         url: "http://www.ashipaelectric.com",
       },
       {
         title: "ArkBuilders Enterprise",
-        category: "A React based resume website template",
+        category: "Official website for a software development company",
         image: "portfolio/abc.png",
         url: "https://www.abcenterprise.xyz",
       },
       {
         title: "Shecluded",
-        category:
-          "(MVP Only) A React and Meteor based chat University project.",
+        category: "Official website for a women empowerment firm",
         image: "portfolio/shecluded.png",
         url: "http://www.shecluded.com",
       },
       {
         title: "Music BrainBox",
-        category:
-          "(MVP Only) A React and Meteor based chat University project.",
+        category: "Official music-based website for a music school",
         image: "portfolio/music.png",
         url: "https://musicbrainbox.nicepage.io",
       },
       {
         title: "Invest Naira",
-        category: "A React based resume website template",
+        category: "Official website a Nigerian Fintech",
         image: "portfolio/investnaira.png",
         url: "http://www.investnaira.com",
       },
       {
         title: "KidsInspiring",
-        category: "A React based resume website template",
+        category: "Official website for a kids empowerment platform",
         image: "portfolio/kids.png",
         url: "https://kidsinspiringnation.org",
       },
       {
         title: "Facial Recognition",
-        category: "Website I built for a restaurant I like in Thailand",
+        category: "Webapp to recognize faces from images",
         image: "portfolio/face.png",
         url: "https://smart-brain-mega.vercel.app",
       },
