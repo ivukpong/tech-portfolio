@@ -33,7 +33,7 @@ export default function Resume({ data }: ResumeProps) {
       className="relative py-20 bg-secondary overflow-hidden"
     >
       {/* Parallax Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-black/80"></div>
+      <div className="absolute inset-0"></div>
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.div

@@ -33,7 +33,7 @@ const iconMap: Record<string, JSX.Element> = {
 
 export default function Header({ data }: HeaderProps) {
   return (
-    <header className="relative h-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-secondary overflow-hidden">
+    <header className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
       <ParticlesBg type="cobweb" color="#64ffda" bg={true} num={80} />
 
       {/* Animated Name */}

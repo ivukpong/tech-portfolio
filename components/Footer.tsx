@@ -9,7 +9,7 @@ interface FooterProps {
 
 export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="relative py-12 bg-gradient-to-t from-secondary to-primary border-t border-secondary overflow-hidden">
+    <footer className="relative py-12 border-t border-secondary overflow-hidden">
       {/* Parallax Background */}
       <div className="absolute inset-0 bg-cover bg-fixed opacity-10" />
 

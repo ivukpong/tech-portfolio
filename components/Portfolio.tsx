@@ -45,7 +45,7 @@ export default function Portfolio({ data }: PortfolioProps) {
                 viewport={{ once: true }}
               >
                 {/* Parallax Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition duration-500"></div>
+                <div className="absolute inset-0 opacity-0 hover:opacity-100 transition duration-500"></div>
 
                 <img
                   src={`/images/${project.image}`}
