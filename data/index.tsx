@@ -43,7 +43,7 @@ export const data = {
       },
       {
         name: "github",
-        url: "https://github.com/ini10000",
+        url: "https://github.com/ivukpong",
         className: "fa fa-github",
       },
     ],
