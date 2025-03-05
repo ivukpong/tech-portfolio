@@ -40,7 +40,7 @@ export default function Header({ data }: HeaderProps) {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-5xl md:text-7xl font-extrabold text-accent drop-shadow-lg"
+        className="text-5xl md:text-7xl font-extrabold text-center text-accent drop-shadow-lg"
       >
         {data.name}
       </motion.h1>
