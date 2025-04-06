@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "framer-motion": "^12.4.10",
+    "framer": "^2.4.1",
+    "framer-motion": "^12.6.3",
     "next": "15.2.1",
     "particles-bg": "^2.5.5",
     "react": "^19.0.0",

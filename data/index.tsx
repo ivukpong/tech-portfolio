@@ -68,29 +68,36 @@ export const data = {
           "Top performer in the program, excelling in both technical and theoretical aspects. Gained expertise in frontend, backend, system administration, database, and cybersecurity domains.",
       },
     ],
-    work: [
-      {
-        company: "Ashipa Electric",
-        title: "Software Developer",
-        years: "Dec 2022 - Oct 2024",
-        description:
-          "Enhanced website frontend performance using Next.js. Developed a cross-platform mobile app with React Native, increasing user engagement. Designed and implemented robust APIs using NestJS to improve backend efficiency.",
-      },
-      {
-        company: "Shecluded",
-        title: "Mobile Engineer",
-        years: "Nov 2021 - Apr 2022",
-        description:
-          "Revamped mobile app UI/UX using Figma and React Native (TypeScript), resulting in an increase in user satisfaction. Utilized Jira to streamline project management and improve team collaboration.",
-      },
-      {
-        company: "Invest Naira",
-        title: "Software Engineer",
-        years: "Feb 2019 - Oct 2021",
-        description:
-          "Developed a responsive web application using React.js to improve user experience and reduce bounce rates. Built a cross-platform mobile app with React Native (Expo) to expand user reach. Collaborated effectively with cross-functional teams to deliver high-quality solutions.",
-      },
-    ],
+   work: [
+  {
+    company: "Habaripay",
+    title: "Backend Developer",
+    years: "Dec 2024 - Apr 2025",
+    description:
+      "Developed scalable and high-performance APIs and MVC architectures using ASP.NET Core to enhance backend efficiency. Improved team collaboration and deployment workflows by implementing version control practices with Azure DevOps. Modernized internal tools using AngularJS, boosting performance and user satisfaction.",
+  },
+  {
+    company: "Ashipa Electric",
+    title: "Software Developer",
+    years: "Dec 2022 - Oct 2024",
+    description:
+      "Enhanced website frontend performance using Next.js. Developed a cross-platform mobile app with React Native, increasing user engagement. Designed and implemented robust APIs using NestJS to improve backend efficiency.",
+  },
+  {
+    company: "Shecluded",
+    title: "Mobile Engineer",
+    years: "Nov 2021 - Apr 2022",
+    description:
+      "Revamped mobile app UI/UX using Figma and React Native (TypeScript), resulting in an increase in user satisfaction. Utilized Jira to streamline project management and improve team collaboration.",
+  },
+  {
+    company: "Invest Naira",
+    title: "Software Engineer",
+    years: "Feb 2019 - Oct 2021",
+    description:
+      "Developed a responsive web application using React.js to improve user experience and reduce bounce rates. Built a cross-platform mobile app with React Native (Expo) to expand user reach. Collaborated effectively with cross-functional teams to deliver high-quality solutions.",
+  },
+],
     skills: [
       {
         name: "Frontend Development",

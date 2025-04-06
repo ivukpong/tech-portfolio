@@ -15,7 +15,7 @@ export default function About({ data }: AboutProps) {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-gradient-to-r from-primary to-secondary py-24"
+      className="relative overflow-hidden py-24"
     >
       {/* Parallax Background Elements */}
       <motion.div

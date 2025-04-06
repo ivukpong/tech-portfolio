@@ -101,7 +101,7 @@ export default function Resume({ data }: ResumeProps) {
               {data.skills.map((category, index) => (
                 <motion.div
                   key={category.name}
-                  className="bg-primary/30 p-6 rounded-xl shadow-lg border border-accent/40 backdrop-blur-lg"
+                  className="bg-primary/30 p-3 rounded-xl shadow-lg border border-accent/40 backdrop-blur-lg"
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -116,7 +116,7 @@ export default function Resume({ data }: ResumeProps) {
                       return (
                         <motion.div
                           key={skill.name}
-                          className="flex items-center gap-3"
+                          className="flex items-center justify-between gap-3"
                           initial={{ opacity: 0, scale: 0.8 }}
                           whileInView={{ opacity: 1, scale: 1 }}
                           transition={{
@@ -125,7 +125,7 @@ export default function Resume({ data }: ResumeProps) {
                           }}
                           viewport={{ once: true }}
                         >
-                          <SkillIcon className="text-accent text-2xl" />
+                          <SkillIcon className="text-accent text-xl min-w-[10px]" />
                           <div className="w-full bg-primary/20 rounded-full h-2.5 relative">
                             <motion.div
                               className="bg-accent h-2.5 rounded-full"
@@ -136,7 +136,7 @@ export default function Resume({ data }: ResumeProps) {
                               viewport={{ once: true }}
                             />
                           </div>
-                          <span className="text-textMuted text-sm font-medium whitespace-nowrap">
+                          <span className="text-textMuted text-sm font-medium whitespace-nowrap text-right">
                             {skill.name}
                           </span>
                         </motion.div>
