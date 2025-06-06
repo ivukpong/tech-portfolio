@@ -70,7 +70,7 @@ export const data = {
     ],
    work: [
   {
-    company: "Habaripay",
+    company: "GT Bank",
     title: "Backend Developer",
     years: "Dec 2024 - Apr 2025",
     description:
