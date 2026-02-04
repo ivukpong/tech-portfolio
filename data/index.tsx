@@ -1,12 +1,10 @@
 export const data = {
   main: {
     name: "INIOBONG VINCENT UKPONG",
-    description:
-      "Dedicated and results-oriented Full-Stack Developer with a strong foundation in web and mobile development, and a growing passion for cybersecurity. Proficient in a wide range of technologies, including React, Node.js, Python, and more.",
+    description: "Senior Full-Stack Engineer specializing in fintech platforms, mobile-first systems, and cloud-deployed backend architectures. Expert in building scalable REST APIs, integrating payment systems, and shipping production software to real users.",
     image: "me.jpg",
-    bio: "Highly skilled full-stack developer with a passion for building innovative and user-friendly web and mobile applications. Proven ability to design, develop, and deploy applications across the entire tech stack, from robust backend infrastructure to intuitive user interfaces. Possesses strong problem-solving skills and thrives in collaborative environments.",
-    contactmessage:
-      "Feel free to reach out to me for any inquiries or collaborations.",
+    bio: "Senior Full-Stack Engineer with deep backend expertise in designing scalable APIs, secure payment workflows, and cloud-deployed systems. Proven track record building production fintech and mobile-first platforms used by real customers. Strong focus on system architecture, maintainability, and performance at scale. Experienced with modern cloud infrastructure (Azure, AWS) and AI-assisted development workflows.",
+    contactmessage: "Open to senior engineering roles, technical leadership opportunities, and fintech/mobile platform projects. Particularly interested in startups, international teams, and complex payment systems.",
     email: "ivukpong@gmail.com",
     phone: "+2349079232170",
     github: "https://github.com/ini10000",
@@ -49,8 +47,7 @@ export const data = {
     ],
   },
   resume: {
-    skillmessage:
-      "Proficient in a wide range of technologies, including React, Node.js, Python, and more. Committed to staying updated with the latest industry trends and leveraging innovative tools like Figma and Canva to create exceptional user experiences.",
+    skillmessage: "Specialized in backend system design, fintech integration, and mobile engineering with production-grade cloud deployment experience. Core strengths include NestJS microservices, Prisma ORM, payment gateway integration (Paystack), React Native (Expo), and CI/CD workflows using Azure DevOps and AWS. Proficient in AI-assisted development using GitHub Copilot for accelerated delivery without compromising code quality.",
     education: [
       {
         school: "Covenant University",
@@ -73,193 +70,122 @@ export const data = {
         company: "GT Bank",
         title: "Backend Developer",
         years: "Dec 2024 - Apr 2025",
-        description:
-          "Developed scalable and high-performance APIs and MVC architectures using ASP.NET Core to enhance backend efficiency. Improved team collaboration and deployment workflows by implementing version control practices with Azure DevOps. Modernized internal tools using AngularJS, boosting performance and user satisfaction.",
+        description: "Architected and deployed scalable ASP.NET Core APIs and MVC systems serving internal banking operations. Implemented CI/CD pipelines using Azure DevOps, reducing deployment time and increasing release reliability. Managed cloud infrastructure on Microsoft Azure including environment configuration, monitoring, and production deployments. Modernized legacy AngularJS tools, improving performance and maintainability for enterprise users."
       },
+     {
+  company: "Ashipa Electric",
+  title: "Software Developer",
+  years: "Dec 2022 - Oct 2024",
+  description: "Designed and deployed full-stack systems including Next.js web platform, React Native mobile application (Expo), and NestJS backend APIs. Built secure authentication flows and integrated Paystack payment gateway for transaction processing. Architected API layer using Prisma ORM with PostgreSQL for type-safe data access. Handled WebView integration for mobile payment flows including deep linking and callback handling."
+},
+     {
+  company: "Shecluded",
+  title: "Mobile Engineer",
+  years: "Nov 2021 - Apr 2022",
+  description: "Led mobile app redesign using React Native (TypeScript) with Figma-based design system implementation. Improved UI/UX resulting in measurable user satisfaction increases. Managed feature development using Agile methodology via Jira, coordinating with cross-functional teams for timely delivery."
+},
       {
-        company: "Ashipa Electric",
-        title: "Software Developer",
-        years: "Dec 2022 - Oct 2024",
-        description:
-          "Enhanced website frontend performance using Next.js. Developed a cross-platform mobile app with React Native, increasing user engagement. Designed and implemented robust APIs using NestJS to improve backend efficiency.",
-      },
-      {
-        company: "Shecluded",
-        title: "Mobile Engineer",
-        years: "Nov 2021 - Apr 2022",
-        description:
-          "Revamped mobile app UI/UX using Figma and React Native (TypeScript), resulting in an increase in user satisfaction. Utilized Jira to streamline project management and improve team collaboration.",
-      },
-      {
-        company: "Invest Naira",
-        title: "Software Engineer",
-        years: "Feb 2019 - Oct 2021",
-        description:
-          "Developed a responsive web application using React.js to improve user experience and reduce bounce rates. Built a cross-platform mobile app with React Native (Expo) to expand user reach. Collaborated effectively with cross-functional teams to deliver high-quality solutions.",
-      },
+  company: "Invest Naira",
+  title: "Software Engineer",
+  years: "Feb 2019 - Oct 2021",
+  description: "Built fintech platform including React.js web application and React Native (Expo) mobile app for investment management. Developed responsive UI improving user experience and engagement metrics. Worked in cross-functional team environment delivering investor-facing features in production."
+},
     ],
     skills: [
-      {
-        name: "Frontend Development",
-        level: "90%",
-        details: [
-          {
-            name: "React.js",
-            level: "85%",
-          },
-          {
-            name: "React Native",
-            level: "90%",
-          },
-          {
-            name: "AngularJS",
-            level: "75%",
-          },
-          {
-            name: "NextJS",
-            level: "80%",
-          },
-          {
-            name: "Tailwind CSS",
-            level: "70%",
-          },
-        ],
-      },
-      {
-        name: "Backend Development",
-        level: "85%",
-        details: [
-          {
-            name: "Node.js",
-            level: "85%",
-          },
-          {
-            name: "Express.js",
-            level: "80%",
-          },
-          {
-            name: "NestJS",
-            level: "75%",
-          },
-          {
-            name: "ASP .Net",
-            level: "70%",
-          },
-          {
-            name: "Django",
-            level: "65%",
-          },
-        ],
-      },
-      {
-        name: "Mobile Development",
-        level: "85%",
-        details: [
-          {
-            name: "React Native",
-            level: "90%",
-          },
-          {
-            name: "IonicJS",
-            level: "75%",
-          },
-          {
-            name: "Flutter",
-            level: "70%",
-          },
-        ],
-      },
-      {
-        name: "Database Management",
-        level: "80%",
-        details: [
-          {
-            name: "PostgreSQL",
-            level: "80%",
-          },
-          {
-            name: "MongoDB",
-            level: "75%",
-          },
-          {
-            name: "MySQL",
-            level: "70%",
-          },
-        ],
-      },
-      {
-        name: "Cybersecurity",
-        level: "70%",
-        details: [
-          {
-            name: "Networking Essentials",
-            level: "75%",
-          },
-          {
-            name: "Network Monitoring",
-            level: "70%",
-          },
-          {
-            name: "Cybersecurity Fundamentals",
-            level: "65%",
-          },
-        ],
-      },
-      {
-        name: "System Administration",
-        level: "75%",
-        details: [
-          {
-            name: "Windows/Linux Administration",
-            level: "75%",
-          },
-          {
-            name: "System Administration Fundamentals",
-            level: "70%",
-          },
-        ],
-      },
-      {
-        name: "Programming Languages",
-        level: "85%",
-        details: [
-          {
-            name: "JavaScript",
-            level: "90%",
-          },
-          {
-            name: "Python",
-            level: "85%",
-          },
-          {
-            name: "C#",
-            level: "75%",
-          },
-          {
-            name: "Java",
-            level: "70%",
-          },
-          {
-            name: "C/C++",
-            level: "65%",
-          },
-        ],
-      },
-      {
-        name: "Design & Prototyping",
-        level: "75%",
-        details: [
-          {
-            name: "Figma",
-            level: "80%",
-          },
-          {
-            name: "Canva",
-            level: "70%",
-          },
-        ],
-      },
+  {
+    name: "Backend & System Design",
+    level: "90%",
+    details: [
+      { name: "NestJS (Microservices & Modules)", level: "90%" },
+      { name: "Prisma ORM (Type-safe Data Layer)", level: "85%" },
+      { name: "REST API Architecture & Design", level: "90%" },
+      { name: "ASP.NET Core (MVC & API)", level: "80%" },
+      { name: "Authentication & Authorization (JWT, OAuth)", level: "85%" },
+      { name: "Node.js / Express.js", level: "90%" },
     ],
+  },
+  {
+    name: "Fintech & Payment Integration",
+    level: "85%",
+    details: [
+      { name: "Paystack (WebView, Popups, Deep Links)", level: "85%" },
+      { name: "Payment Flow Design (Success/Failure/OTP)", level: "85%" },
+      { name: "Transaction State Management", level: "80%" },
+      { name: "Webhook Integration & Callbacks", level: "80%" },
+    ],
+  },
+  {
+    name: "Mobile Development (React Native)",
+    level: "90%",
+    details: [
+      { name: "React Native (Expo)", level: "90%" },
+      { name: "Mobile Navigation & Deep Linking", level: "85%" },
+      { name: "WebView Integration (Payment Flows)", level: "85%" },
+      { name: "Async Storage & Session Persistence", level: "85%" },
+      { name: "Cross-Platform Mobile Architecture", level: "85%" },
+    ],
+  },
+  {
+    name: "Cloud Infrastructure & DevOps",
+    level: "80%",
+    details: [
+      { name: "Microsoft Azure (Deployments & Services)", level: "80%" },
+      { name: "Azure DevOps (CI/CD Pipelines)", level: "80%" },
+      { name: "AWS (EC2, S3, RDS)", level: "75%" },
+      { name: "Environment Configuration & Secrets Management", level: "80%" },
+      { name: "Release Management & Monitoring", level: "75%" },
+    ],
+  },
+  {
+    name: "Frontend Development",
+    level: "85%",
+    details: [
+      { name: "React.js", level: "90%" },
+      { name: "Next.js (SSR & Static Generation)", level: "85%" },
+      { name: "TypeScript", level: "85%" },
+      { name: "Tailwind CSS", level: "80%" },
+      { name: "AngularJS", level: "75%" },
+    ],
+  },
+  {
+    name: "Database Management",
+    level: "85%",
+    details: [
+      { name: "PostgreSQL (Production Experience)", level: "85%" },
+      { name: "Prisma ORM (Schema Design)", level: "85%" },
+      { name: "MongoDB", level: "75%" },
+      { name: "MySQL", level: "75%" },
+    ],
+  },
+  {
+    name: "Modern Development Workflow",
+    level: "85%",
+    details: [
+      { name: "GitHub Copilot (AI-Assisted Development)", level: "85%" },
+      { name: "Git & Version Control (Advanced)", level: "90%" },
+      { name: "Code Review & Refactoring", level: "85%" },
+      { name: "Technical Documentation", level: "80%" },
+    ],
+  },
+  {
+    name: "Programming Languages",
+    level: "90%",
+    details: [
+      { name: "JavaScript / TypeScript", level: "95%" },
+      { name: "Python", level: "80%" },
+      { name: "C# (.NET)", level: "80%" },
+      { name: "SQL", level: "85%" },
+    ],
+  },
+  {
+    name: "Design & Collaboration Tools",
+    level: "75%",
+    details: [
+      { name: "Figma (Prototyping & Design Handoff)", level: "80%" },
+      { name: "Jira (Agile Project Management)", level: "75%" },
+    ],
+  },
+],
   },
   portfolio: {
     projects: [
