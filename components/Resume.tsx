@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaBriefcase, FaTools } from "react-icons/fa";
-import { Experience, Education, SkillCategory } from "@/types/resume";
+import { FaGraduationCap, FaBriefcase, FaTools, FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
+import { Experience, Education, SkillCategory, Certification } from "@/types/resume";
 import { IconType } from "react-icons";
 import {
   SiReact,
@@ -23,6 +23,7 @@ interface ResumeProps {
     education: Education[];
     work: Experience[];
     skills: SkillCategory[];
+    certifications: Certification[];
   };
 }
 
@@ -143,6 +144,44 @@ export default function Resume({ data }: ResumeProps) {
                       );
                     })}
                   </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+          {/* Certifications Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-accent mb-8 flex items-center gap-2">
+              <FaCertificate className="text-4xl text-accent" /> Certifications
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.certifications.map((cert, index) => (
+                <motion.div
+                  key={`${cert.name}-${cert.issued}`}
+                  className="bg-primary/30 p-4 rounded-xl shadow-lg border border-accent/40 backdrop-blur-lg flex flex-col gap-1"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-sm font-semibold text-text leading-snug">{cert.name}</h3>
+                  <p className="text-xs text-accent font-medium">{cert.issuer}</p>
+                  <p className="text-xs text-textMuted/80">
+                    Issued {cert.issued}
+                    {cert.expires ? ` · Expires ${cert.expires}` : ""}
+                  </p>
+                  {cert.credentialId && (
+                    <p className="text-xs text-textMuted/60">ID: {cert.credentialId}</p>
+                  )}
+                  {cert.url && (
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-xs text-accent flex items-center gap-1 hover:underline w-fit"
+                    >
+                      <FaExternalLinkAlt className="text-[10px]" /> Show credential
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </div>

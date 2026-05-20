@@ -16,6 +16,7 @@ export interface ResumeData {
         education: Education[];
         work: Experience[];
         skills: SkillCategory[];
+        certifications: Certification[];
     };
     portfolio: {
         projects: Project[];
@@ -58,4 +59,13 @@ export interface Project {
     category: string;
     image: string;
     url: string;
+}
+
+export interface Certification {
+    name: string;
+    issuer: string;
+    issued: string;
+    expires?: string;
+    credentialId?: string;
+    url?: string;
 }
